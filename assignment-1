@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html large="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portifolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400;1,500;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">union</div>
+            <div class="menu">
+                <a href="# home ">Home</a>
+                <a href="# about"> About</a>
+                <a href="# portfolio">Portifolio</a>
+                <a href="# contact">Contact</a>
+                <a href="#">YouTube</a>
+
+            </div>
+
+        </nav>
+    
+        <div class="h-text animate__animated animate__zoomIn">
+            <h1> Hello! I'm Kajal,<br>
+            a Frontend Developer ...</h1>
+            <p>
+                I am glad you are here! <br>
+                Welcome to my Digital Portfolio...
+            </p>
+            <div class ="btn">
+            <a href="#">SAY HELLO</a>
+            <a href="#" id="more">DOWNLODE CV</a>
+            </div>
+        </div>
+        <img src="images/img-6.png" id="kajal"class="animate__animated animate__slideInLeft animate__delay-1s">
+        <div class= "box animate__animated animate__slideInDown">
+    </header>
+   
+           
+        <section id="About">
+            <h1 class="headings">ABOUT ME</h1>
+
+            <div id="pic">
+
+                 <img src="images/img-5.png" alt="">
+
+                <div id="intro">
+
+                     <h2>Kajal Chandekar </h2>
+                     <p>Highly motivated 3rd year Computer Science And Engineering hardworking college Student with a motivated atitude and varify of powerful skill.<br> Creative Front-End Developer skilled in designing, developing and testing multiple web basednapplication incorporating a range of technologies.</p>
+                </div>
+            </div>
+         </section>
+    <section id="Portfolio">
+        <h1 class="headings">PORTFOLIO</h1>
+        <div class="gallery">
+            <img src="images/FD-photo.1.jpg" alt="">
+            <img src="images/FD-photo3.jpg" alt="">
+            <img src="images/FD-photo4.jpg" alt="">
+            <img src="images/FD-photo6.jpg" alt="">
+            <img src="images/FD-photo5.jpg" alt="">
+            <img src="images/FD-photo2.jpg" alt="">
+
+        </div>
+    </section>
+
+
+        <section id ="Contact">
+            <h1 class="headings">CONTACT</h1>
+            <form action=""class="form">
+                <input type="text" name="name" class="input"placeholder="Enter your name">
+                <input type="email" name="email" class="input" placeholder="Enter your Email">
+                <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Enter your message"></textarea>
+                <input type="submit" value="send" id="send">
+            </form>
+                    
+        </section>
+</body>
+</html>
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+    font-family: 'Roboto:ital', sans-serif;
+    background-color: #222f3e;
+    position:sticky;
+    top: 0;
+    
+}
+.logo{
+    font-size: 50px;
+    letter-spacing: 2px;
+    color: #c83a0b;
+    
+
+}
+.menu a{
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: rgb(48, 23, 234);
+}
+.menu a:hover{
+    background-color: #ed774f;
+    transition: 0.4s;
+    border: 1px solid black;
+    color: aliceblue;
+}
+.menu a:last-child{
+    background: #de3031;
+    border-right: 8px;
+    letter-spacing: 2px;
+    color: aliceblue;
+}
+.h-text{
+    max-width: 500px;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+.h-text h1{
+    font-size: 3em;
+    color: #222f3e;
+    font-family:'Crimson Text',serif;
+}
+.h-text p{
+    text-decoration: none;
+    margin-bottom: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.h-text a{
+    text-decoration: none;
+    background: #01a3a4;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    font-family: 'bitter',serif;
+    border: 8px;
+
+}
+#more{
+    background: transparent;
+    color:#01a3a4 ;
+    box-shadow: 2px 0px 0px grey;
+}
+.btn :hover{
+    transition: 0.4s;
+    border: 1px solid black;
+    color: aliceblue;
+
+}
+.icon{
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.icon a{
+    columns: white;
+    padding: 10px;
+    font-size: 20px;
+    margin: 5px 0px;
+    background: #01a3a4;
+
+}
+.box{
+    width: 60%;
+    height: 80%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(225,234,167,0.7);
+    z-index: -2;
+
+}
+#kajal{
+    width: 450px;
+    height: 100%;
+    position: absolute;
+    right: 10%;
+    top: 0;
+    z-index: -1;
+}
+/* About section*/
+#About{
+    display:flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20PX;
+    margin-bottom: 50PX;
+    text-align: center;
+    background-color: rgb(136, 154, 174);
+}
+#pic{
+    display: flex;
+}
+#pic img{
+    width: 500px;
+    height: 400px;
+}
+#intro{
+    display: flex;
+    flex-direction:column;
+    text-align: justify;
+    padding: 10px;
+}
+#intro h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+   
+}
+#intro p{
+    font-size: 1.5rem;
+}
+/*Portfolio section*/
+#Portfolio{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+    align-items: center;
+    padding: 20px;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.gallery img{
+    width: 360px;
+    height: 240px;
+    margin: 10px;
+
+}
+
+/*Contact section*/
+#Contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+    padding: 20px;
+    text-align: center;
+
+}
+.form{
+    display: flex;
+    flex-direction:column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+
+}
+.input{
+    padding: 12px;
+    margin: 15px;
+    width: 50ex;
+    border: none;
+    outline: none;
+}
+#msg{
+    width: 40ex;
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    outline: none;
+}
+#send{
+    padding: 10px;
+    width: 15ex;
+    margin: 40px;
+    border: none;
+    outline: none;
+
+}
+#send:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+}
